@@ -1,0 +1,38 @@
+{
+    "build": {
+        "core": "arduino",
+        "extra_flags": "-DARDUINO_AVR_MICRODUINO_CORE_USB",
+        "f_cpu": "16000000L",
+        "hwids": [
+            [
+                "0x2341",
+                "0x8036"
+            ]
+        ],
+        "mcu": "atmega32u2",
+        "variant": "32u2m_variant",
+        "usb_product": "MT-DB-U2",
+        "board_build.usb_manufacturer": "MattairTech",
+        "board_build.vid": "0x16D0"
+    },
+    "debug": {
+        "simavr_target": "atmega32u2"
+    },
+    "frameworks": [
+        "arduino"
+    ],
+    "name": "Microduino Core USB (ATmega32U4@16M,5V)",
+    "upload": {
+        "disable_flushing": true,
+        "maximum_ram_size": 2560,
+        "maximum_size": 28672,
+        "protocol": "avr109",
+        "require_upload_port": true,
+        "speed": 57600,
+        "use_1200bps_touch": true,
+        "wait_for_upload_port": true,
+        "native_usb": true
+    },
+    "url": "http://wiki.microduinoinc.com/Microduino-Module_CoreUSB",
+    "vendor": "Microduino"
+}
